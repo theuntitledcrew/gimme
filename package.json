@@ -1,0 +1,21 @@
+{
+  "name": "gimme-the-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gimme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/gimme.js",
+    "start": "node ./src/gimme.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
