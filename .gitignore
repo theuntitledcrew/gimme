@@ -25,6 +25,9 @@ coverage
 # nyc test coverage
 .nyc_output
 
+# .DS_Store file
+.DS_Store
+
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
@@ -81,6 +84,3 @@ web_modules/
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-
-# .DS_Store file
-.DS_Store

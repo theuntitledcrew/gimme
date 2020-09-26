@@ -40,7 +40,7 @@ async function registerEvents(client, dir = '') {
   }
 }
 
-module.exports = { 
-  registerCommands, 
+module.exports = {
+  registerCommands,
   registerEvents,
 };
