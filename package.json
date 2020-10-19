@@ -1,28 +1,27 @@
 {
-  "name": "gimme-the-bot",
+  "name": "gimme",
   "version": "1.0.0",
-  "description": "The bot that gives",
-  "main": "gimme.js",
+  "description": "",
+  "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/gimme.js",
-    "start": "node ./src/gimme.js"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "discord",
-    "bot"
-  ],
+  "keywords": [],
   "author": "Joey Ortiz",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/theuntitledcrew/gimme.git"
-  },
   "license": "MIT",
   "dependencies": {
+    "diff": "^4.0.2",
     "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.0",
+    "node-fetch": "^2.6.1",
+    "querystring": "^0.2.0",
+    "random-puppy": "^1.1.0"
   },
   "devDependencies": {
+    "eslint": "^7.9.0",
     "nodemon": "^2.0.4"
   }
 }
