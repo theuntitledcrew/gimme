@@ -3,21 +3,21 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
 const subreddits = [
-  'gaynsfw',
+  'rule34',
 ];
 
 module.exports = class extends Command {
 
   constructor(...args) {
     super(...args, {
-      aliases: ['gaypics'],
-      description: 'Gay pics.',
+      aliases: ['34'],
+      description: 'Rule 34.',
       category: 'NSFW'
     });
   }
 
   async run(message) {
-    const data = await fetch(`http://www.reddit.com/r/gaynsfw/top/.json?sort=top&t=all&limit=50`)
+    const data = await fetch(`http://www.reddit.com/r/rule34/top/.json?sort=top&t=all&limit=50`)
       .then(response => response.json())
       .then(body => body.data);
     let isImage = false
