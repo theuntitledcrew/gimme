@@ -17,7 +17,7 @@ module.exports = class extends Command {
   }
 
   async run(message) {
-    const data = await fetch(`http://www.reddit.com/r/boobs/hot.json?limit=50`)
+    const data = await fetch(`http://www.reddit.com/r/boobs/top/.json?sort=top&t=all&limit=50`)
       .then(response => response.json())
       .then(body => body.data);
     let isImage = false

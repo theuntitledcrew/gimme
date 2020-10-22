@@ -12,6 +12,7 @@
   "author": "Joey Ortiz",
   "license": "MIT",
   "dependencies": {
+    "canvas": "^2.6.1",
     "diff": "^4.0.2",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
