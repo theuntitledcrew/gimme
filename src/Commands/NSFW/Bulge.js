@@ -3,21 +3,21 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
 const subreddits = [
-  'yaoi', 'YaoiNSFW', 'hardcoreyaoi'
+  'Bulges',
 ];
 
 module.exports = class extends Command {
 
   constructor(...args) {
     super(...args, {
-      aliases: ['yaoi'],
-      description: 'Yaoi.',
+      aliases: ['bulge', 'bulges'],
+      description: 'Bulges.',
       category: 'NSFW'
     });
   }
 
   async run(message) {
-    const data = await fetch(`http://www.reddit.com/r/${subreddits[1]}/top/.json?sort=top&t=all&limit=50`)
+    const data = await fetch(`http://www.reddit.com/r/Bulges/top/.json?sort=top&t=all&limit=50`)
       .then(response => response.json())
       .then(body => body.data);
     let isImage = false
@@ -30,6 +30,7 @@ module.exports = class extends Command {
       }
     }
     const imageURL = data.children[randomSelection].data.url
+    console.log(data);
     return message.channel.send(new MessageEmbed().setImage(`${imageURL}`));
   }
 };

@@ -3,21 +3,21 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
 const subreddits = [
-  'yaoi', 'YaoiNSFW', 'hardcoreyaoi'
+  'MassiveCock',
 ];
 
 module.exports = class extends Command {
 
   constructor(...args) {
     super(...args, {
-      aliases: ['yaoi'],
-      description: 'Yaoi.',
+      aliases: ['pp', 'cock', 'penis'],
+      description: 'Penis. Dick. Cock.',
       category: 'NSFW'
     });
   }
 
   async run(message) {
-    const data = await fetch(`http://www.reddit.com/r/${subreddits[1]}/top/.json?sort=top&t=all&limit=50`)
+    const data = await fetch(`http://www.reddit.com/r/MassiveCock/top/.json?sort=top&t=all&limit=50`)
       .then(response => response.json())
       .then(body => body.data);
     let isImage = false

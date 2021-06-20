@@ -1,8 +1,8 @@
 require('dotenv').config();
 const fs = require('fs');
 const Discord = require('discord.js');
-// const PREFIXES = [process.env.PREFIX1, process.env.PREFIX2];
-const PREFIXES = process.env.PREFIXES.split(',');
+const PREFIXES = [process.env.PREFIX, process.env.PREFIX2];
+// const PREFIXES = process.env.PREFIXES.split(',');
 const TOKEN = process.env.BOT_TOKEN;
 
 const validateMessage = require('../utils/validate');
